@@ -7,7 +7,7 @@ import pandas as pd
 
 from . import data as D
 from .data import v
-from .rod import Design, make_layers, fast_metrics, FAMILIES
+from .rod import Design, make_layers, fast_metrics, FAMILIES, collapse_safety_factor
 from .loca import simulate_batch
 
 SAFETY_CHECKS = ["H2 by response time <= limit", "No melting before response time",
@@ -19,6 +19,7 @@ def evaluate(designs, min_coping=0.0, response_min=None, h_steam=None, decay_mul
     """Fast checks for every design; LOCA transient for those passing (or all)."""
     rows = [fast_metrics(d, econ_override) for d in designs]
     df = pd.DataFrame(rows)
+    df["collapse_sf"] = [collapse_safety_factor(d) for d in designs]
     df["fast_ok"] = [all(r["checks"].values()) for r in rows]
     idx = list(range(len(designs))) if run_loca_on == "all" else list(np.where(df["fast_ok"])[0])
     for c in ("coping_min", "melt_min", "protection_lost_min", "h2_at_response_kg", "h2_end_kg", "peak_T"):
