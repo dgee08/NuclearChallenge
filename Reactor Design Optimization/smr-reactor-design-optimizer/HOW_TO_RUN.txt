@@ -1,0 +1,52 @@
+LOCA SAFETY & NEW LAYERED CLADDING - how to run
+================================================
+
+This zip adds a new page to the challenge's SMR Reactor Design Optimization Tool.
+It contains:  safety\  pages\  requirements.txt  SAFETY_EXTENSION.md  HOW_TO_RUN.txt
+
+-------------------------------------------------
+OPTION A - GitHub Codespace (recommended)
+-------------------------------------------------
+1. Open your Codespace for the F26-NuclearIC repo.
+2. Drag loca_extension.zip from your computer onto the folder
+   "Reactor Design Optimization" in the left file explorer.
+3. In the Codespace terminal, paste:
+
+   cd "/workspaces/F26-NuclearIC/Reactor Design Optimization"
+   unzip -o loca_extension.zip
+   cd smr-reactor-design-optimizer
+   python -m venv .venv
+   source .venv/bin/activate
+   python -m pip install -r requirements.txt
+   python -m streamlit run app.py
+
+   (if "unzip: command not found", use:  python -m zipfile -e loca_extension.zip . )
+
+4. Click "Open in Browser" (or Ports tab -> globe icon next to 8501).
+5. In the app's LEFT SIDEBAR click "LOCA Safety and New Cladding".
+
+-------------------------------------------------
+OPTION B - Windows laptop (PowerShell, needs Python 3.10+)
+-------------------------------------------------
+1. Download the repo: https://github.com/IdeasClinicUWaterloo/F26-NuclearIC
+   (green "Code" button -> Download ZIP) and extract it.
+2. Right-click loca_extension.zip -> Extract All... and choose the folder
+   "F26-NuclearIC-main\Reactor Design Optimization".
+   (It merges into smr-reactor-design-optimizer - say Yes to replace requirements.txt.)
+3. Open PowerShell in "Reactor Design Optimization\smr-reactor-design-optimizer" and run:
+
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+   python -m pip install -r requirements.txt
+   python -m streamlit run app.py
+
+   (If PowerShell blocks Activate.ps1, run first:
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned)
+
+4. The browser opens at http://localhost:8501 -> sidebar -> "LOCA Safety and New Cladding".
+
+-------------------------------------------------
+Changing numbers
+-------------------------------------------------
+All inputs + sources are in  safety\data.py . Edit, save, refresh the browser.
+See SAFETY_EXTENSION.md for how the models work and what still needs research.
