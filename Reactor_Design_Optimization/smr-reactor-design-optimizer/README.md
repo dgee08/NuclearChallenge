@@ -23,12 +23,12 @@ From this directory:
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python -m streamlit run app.py
+python -m streamlit run Original_App.py
 ```
 
 ## Project Files
 
-- `app.py` provides the Streamlit interface.
+- `app.py` provides the Streamlit interface.s
 - `model.py` contains the engineering and cost calculations.
 - `requirements.txt` lists the Python dependencies.
 - `docs/` contains supporting documentation and references.
