@@ -1,0 +1,4 @@
+layer_a,layer_b,failure_temp_C,status,note
+FeCrAl (C26M),Molybdenum,1453,sourced,lowest liquid in Fe-Mo system
+Zircaloy-2,Molybdenum,1551,sourced,Zr-Mo eutectic
+Chromium coating,Zircaloy-2,1332,sourced,Cr-Zr eutectic

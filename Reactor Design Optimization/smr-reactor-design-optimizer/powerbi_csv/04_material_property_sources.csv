@@ -1,0 +1,30 @@
+material,property,status,source
+Zircaloy-2,rho,sourced,Properties of Zircaloy-2 (DTIC)
+Zircaloy-2,cp,sourced,Properties of Zircaloy-2 (DTIC)
+Zircaloy-2,k,sourced,Properties of Zircaloy-2 (DTIC)
+Zircaloy-2,E_GPa,assumption,Properties of Zircaloy-2 (DTIC)
+Zircaloy-2,cost_usd_kg,sourced,Challenge starter tool model.py hardware cost table
+Zircaloy-2,rate_mult,sourced,Cathcart-Pawel Zr steam oxidation correlation (ORNL Zircaloy-2 steam study)
+Zircaloy-2,q_per_mol_O,derived,"NIST-JANAF heats of formation: H2O(g) -241.8, ZrO2 -1100.6, MoO2 -588.9, Al2O3 -1675.7, Cr2O3 -1139.7 kJ/mol"
+Zircaloy-2,melt_C,sourced,High-temperature steam oxidation of zirconium alloys (nuclear-power.com)
+FeCrAl (C26M),rho,assumption,ORNL/TM-2017/186 Handbook on the Material Properties of FeCrAl Alloys
+FeCrAl (C26M),cp,sourced,ORNL/TM-2017/186 Handbook on the Material Properties of FeCrAl Alloys
+FeCrAl (C26M),k,sourced,ORNL/TM-2017/186 Handbook on the Material Properties of FeCrAl Alloys
+FeCrAl (C26M),E_GPa,sourced,ORNL/TM-2017/186 Handbook on the Material Properties of FeCrAl Alloys
+FeCrAl (C26M),comp_wt,sourced,ORNL/TM-2021/1961 Extended-Enrichment Accident-Tolerant LWR fuel (FeCrAl penalty 0.4-0.8 wt%)
+FeCrAl (C26M),cost_usd_kg,assumption,Team engineering assumption - needs research
+FeCrAl (C26M),rate_mult,assumption,PNNL-30445 Degradation and Failure Phenomena of ATF: FeCrAl
+FeCrAl (C26M),q_per_mol_O,derived,"NIST-JANAF heats of formation: H2O(g) -241.8, ZrO2 -1100.6, MoO2 -588.9, Al2O3 -1675.7, Cr2O3 -1139.7 kJ/mol"
+FeCrAl (C26M),melt_C,sourced,PNNL-30445 Degradation and Failure Phenomena of ATF: FeCrAl
+Molybdenum,rho,sourced,International Molybdenum Association: molybdenum properties
+Molybdenum,cp,sourced,Molybdenum (Wikipedia data box)
+Molybdenum,k,sourced,International Molybdenum Association: molybdenum properties
+Molybdenum,E_GPa,sourced,Molybdenum (Wikipedia data box)
+Molybdenum,cost_usd_kg,assumption,Team engineering assumption - needs research
+Molybdenum,rate_mult,derived,"Cheng et al., Evaluations of Mo-alloy for LWR fuel cladding (EPJ-N 2016): Mo 0.2-0.25 mm, ~0.05 mm Zr/FeCrAl coatings, Mo steam loss ~20-25 um/day at 1000 C (~100x below Zr)"
+Molybdenum,q_per_mol_O,derived,"NIST-JANAF heats of formation: H2O(g) -241.8, ZrO2 -1100.6, MoO2 -588.9, Al2O3 -1675.7, Cr2O3 -1139.7 kJ/mol"
+Molybdenum,melt_C,sourced,International Molybdenum Association: molybdenum properties
+Chromium coating,rate_mult,assumption,Oxidation of Cr-coated Zr above 1200 C (npj Mater. Degrad.): Cr-Zr eutectic 1332 C
+Chromium coating,lost_C,sourced,Oxidation of Cr-coated Zr above 1200 C (npj Mater. Degrad.): Cr-Zr eutectic 1332 C
+Chromium coating,cost_usd_kg,assumption,Team engineering assumption - needs research
+Chromium coating,q_per_mol_O,derived,"NIST-JANAF heats of formation: H2O(g) -241.8, ZrO2 -1100.6, MoO2 -588.9, Al2O3 -1675.7, Cr2O3 -1139.7 kJ/mol"

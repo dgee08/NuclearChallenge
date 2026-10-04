@@ -1,0 +1,12 @@
+material,element,weight_fraction
+Zircaloy-2,Zr,0.983
+Zircaloy-2,Sn,0.015
+Zircaloy-2,Fe,0.0015
+Zircaloy-2,Cr,0.001
+Zircaloy-2,Ni,0.0005
+FeCrAl (C26M),Fe,0.8
+FeCrAl (C26M),Cr,0.12
+FeCrAl (C26M),Al,0.06
+FeCrAl (C26M),Mo,0.02
+Molybdenum,Mo,1.0
+Chromium coating,Cr,1.0

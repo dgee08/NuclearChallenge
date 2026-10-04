@@ -1,0 +1,7 @@
+failed_limit,designs_failing
+H2 by response time <= limit,2746
+Moderation within +/-10%,2242
+Enrichment <= 5 wt%,1408
+Flow area >= 95%,545
+Collapse safety factor >= 2,421
+No melting before response time,23

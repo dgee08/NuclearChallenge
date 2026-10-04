@@ -1,0 +1,5 @@
+material,density_kg_m3,specific_heat_J_kgK,conductivity_W_mK,youngs_modulus_GPa,poisson_ratio,cost_usd_kg,oxidation_rate_vs_zircaloy,heat_per_mol_O_J,protection_lost_C,melt_C,end_of_life_corrosion_mm
+Zircaloy-2,6550,330,17.0,80,0.37,420.0,1.0,308000.0,1850,1850,0.04
+FeCrAl (C26M),7150,550,12.0,190,0.28,500.0,0.002,317000.0,1500,1500,0.004
+Molybdenum,10220,251,138.0,329,0.31,1500.0,0.01,52000.0,2623,2623,0.0
+Chromium coating,7190,450,94.0,279,0.21,2000.0,0.1,138000.0,1332,1907,0.002
