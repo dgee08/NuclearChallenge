@@ -22,7 +22,7 @@ from safety.loca import simulate_batch                                # noqa: E4
 from safety.explore import (evaluate, build_grid, rank, best_per_family,   # noqa: E402
                             pellet_sweep, tornado)
 
-st.set_page_config(page_title="LOCA Safety & New Cladding", layout="wide")
+st.set_page_config(page_title="Claddr: LOCA Safety & New Cladding", layout="wide")
 st.session_state["_chart_n"] = 0
 
 GRID_COLOR = "rgba(128,128,128,0.25)"
@@ -161,11 +161,11 @@ objective = st.sidebar.radio("Rank designs by", ["cost", "safety", "balanced"],
 st.sidebar.caption(f"Layered cladding judged to fail at: **{D.LAYERED_FAIL_MODE}** (edit in safety/data.py)")
 
 # ------------------------------------------------------------------ header
-st.title("LOCA Safety & New Layered Cladding")
+st.title("Claddr: LOCA Safety & Layered Cladding")
 st.markdown(
-    "**Problem:** when fuel rods lose cooling, zirconium cladding reacts with steam, heats itself up, "
-    "melts and releases explosive hydrogen. The starter tool only measures **cost and fuel lifetime**. "
-    "This page adds **safety limits** and compares today's Zircaloy rod with a **new layered cladding**: "
+    "**Problem:** When fuel rods lose cooling, zirconium cladding reacts with steam, heats itself up, "
+    "melts and releases explosive hydrogen. The provided starter tool only measures **cost and fuel lifetime**. "
+    "Our app **Claddr** adds safety limits and compares today's Zircaloy rod with a **new layered cladding**: "
     "Zircaloy inside, molybdenum in the middle, FeCrAl outside."
 )
 st.caption("Educational model for the Nuclear Innovation Challenge. Every number and its source is in the "
